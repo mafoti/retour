@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MapsActivity">
+    <item android:id="@+id/filter_settings"
+        android:title="Filter Services"
+        android:icon="@drawable/filter"
+        app:showAsAction="always"
+        android:visible="false"/>
+    <item android:id="@+id/role_settings"
+        android:title="Show Travel Package"
+        android:icon="@drawable/cart"
+        app:showAsAction="always"/>
+    <item
+        android:title="Settings"
+        android:icon="@drawable/ic_menu_moreoverflow_normal_holo_dark"
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/traveler_settings" android:title="@string/traveler_settings"
+                android:orderInCategory="100" app:showAsAction="never" />
+            <item android:id="@+id/provider_settings" android:title="@string/provider_settings"
+                android:orderInCategory="100" app:showAsAction="never" />
+            <item android:id="@+id/logout_settings" android:title="@string/logout_settings"
+                android:orderInCategory="100" app:showAsAction="never" />
+            <item android:id="@+id/project_settings" android:title="@string/project_settings"
+                android:orderInCategory="100" app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

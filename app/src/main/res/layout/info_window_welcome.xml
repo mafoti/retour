@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/info_background_selector"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Retour!\n\nYou can proceed as a Traveler to find registered services, add them to your travel chart and make reviews.\n\nOr you can chooce to be a service provider and register your services directly.\n\nYou can always change your choice, using the settings menu on the top right corner!"
+                android:singleLine="false"
+                android:textColor="#777777"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="50"
+            >
+
+
+            <ToggleButton
+                android:id="@+id/travelerButton"
+                android:background="@drawable/map_togglebutton_selector"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:textSize="14sp"
+                android:textOn="Traveler"
+                android:textOff="Traveler"
+                android:textColor="#666666"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:checked="false"
+                android:layout_weight="25"/>
+
+            <ToggleButton
+                android:id="@+id/providerButton"
+                android:background="@drawable/map_togglebutton_selector"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="14sp"
+                android:textOn="Provider"
+                android:textOff="Provider"
+                android:textColor="#666666"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:checked="false"
+                android:layout_weight="25"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

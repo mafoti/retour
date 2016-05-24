@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/info_background_selector"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Service name/payee"
+                    android:textSize="14dp"
+                    android:textColor="#777777"/>
+
+                <EditText
+                    android:id="@+id/service_name"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/white"
+                    android:padding="5dp"
+                    android:textSize="14dp"
+                    android:singleLine="true"
+                    android:hint="e.g. Hotel Elvis..."
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter your contact details:"
+                    android:textSize="14sp"
+                    android:textColor="#777777"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/mail_icon"
+                        />
+
+                    <EditText
+                        android:id="@+id/email_field"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@android:color/white"
+                        android:inputType="textEmailAddress"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:singleLine="true"
+                        android:hint="Email..." />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/facebook_icon"
+                        />
+
+                    <EditText
+                        android:id="@+id/facebook_field"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@android:color/white"
+                        android:padding="5dp"
+                        android:textSize="14dp"
+                        android:singleLine="true"
+                        android:hint="Facebook username..." />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/url_icon"
+                        />
+
+                    <EditText
+                        android:id="@+id/website_field"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@android:color/white"
+                        android:padding="5dp"
+                        android:inputType="textEmailAddress"
+                        android:textSize="14sp"
+                        android:singleLine="true"
+                        android:hint="Website url..." />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Type of service"
+                    android:textSize="14sp"
+                    android:textColor="#777777"/>
+
+                <Spinner
+                    android:id="@+id/service_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/service_names"
+                    android:spinnerMode="dropdown"
+                    />
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/disabled_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_margin="0dp"
+                        />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="135dp"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:singleLine="false"
+                        android:hint="Special facilities for the disabled" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="What you offer"
+                    android:textSize="14sp"
+                    android:textColor="#777777"/>
+
+                <EditText
+                    android:id="@+id/offer_field"
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/white"
+                    android:padding="5dp"
+                    android:inputType="textMultiLine"
+                    android:textSize="14sp"
+                    android:textColor="#777777"
+                    android:layout_gravity="top"
+                    android:singleLine="false"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="50">
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="25"
+                    android:text="@string/cancel_button_text"
+                    android:textAllCaps="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp"
+                    android:background="@drawable/mapbutton_selector"
+                    android:textColor="#666666"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+
+                    />
+                <Button
+                    android:id="@+id/addServiceButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="25"
+                    android:text="@string/submit_button_text"
+                    android:textAllCaps="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp"
+                    android:background="@drawable/mapbutton_selector"
+                    android:textColor="#666666"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

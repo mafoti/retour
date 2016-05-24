@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/info_background_selector"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Visitor name:"
+                    android:textSize="14sp"
+                    android:textColor="#777777"/>
+
+                <TextView
+                    android:id="@+id/visitor_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#777777"/>
+
+                <LinearLayout
+                    android:id="@+id/mail_overlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:clickable="true">
+
+                    <ImageView android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/mail_icon"
+                        />
+
+                    <TextView
+                        android:id="@+id/email_field"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/youtube_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Youtube:"
+                    android:textSize="12dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#777777"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/youtube_layer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/url_icon"
+                        />
+
+                    <TextView
+                        android:id="@+id/youtube_field"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Rating:"
+                    android:textSize="14sp"
+                    android:textColor="#777777"/>
+
+                <TextView
+                    android:id="@+id/rating_field"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:textColor="#777777"
+                    android:layout_gravity="top"
+                    android:singleLine="false"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Travel impressions:"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/impressions_field"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:singleLine="false"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="25"
+        android:text="@string/dismiss_button_text"
+        android:textAllCaps="false"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:background="@drawable/mapbutton_selector"
+        android:textColor="#666666"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+
+        />
+
+</LinearLayout>

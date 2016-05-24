@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/info_background_selector"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Service name:"
+                    android:textSize="14sp"
+                    android:textColor="#777777"/>
+
+                <TextView
+                    android:id="@+id/service_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#777777"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/mail_icon"
+                        />
+
+                    <TextView
+                        android:id="@+id/email_field"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook Page:"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#777777"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/facebook_icon"
+                        />
+
+                    <TextView
+                        android:id="@+id/facebook_field"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Website:"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#777777"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/url_icon"
+                        />
+
+                    <TextView
+                        android:id="@+id/website_field"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Disabled Facilities:"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/disabled_field"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Package offer:"
+                    android:textSize="14sp"
+                    android:textColor="#777777"/>
+
+                <TextView
+                    android:id="@+id/offer_field"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:textColor="#777777"
+                    android:layout_gravity="top"
+                    android:singleLine="false"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Satisfaction of visitors:"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/status_field"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total votes:"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/votes_field"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/rateText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rate this place..."
+                    android:textSize="14sp"
+                    android:textColor="#777777"/>
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="1.0"
+                    android:rating="0.0" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="25"
+                android:text="@string/dismiss_button_text"
+                android:textAllCaps="false"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/mapbutton_selector"
+                android:textColor="#666666"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+
+                />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

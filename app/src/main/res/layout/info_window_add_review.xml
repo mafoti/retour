@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/info_background_selector"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Visitor name:"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#777777"/>
+
+                <EditText
+                    android:id="@+id/visitor_name"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/white"
+                    android:padding="5dp"
+                    android:textSize="14dp"
+                    android:singleLine="true"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter your email address:"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="14dp"
+                    android:textColor="#777777"/>
+
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/mail_icon"
+                        />
+
+                    <EditText
+                        android:id="@+id/email_field"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@android:color/white"
+                        android:inputType="textEmailAddress"
+                        android:padding="5dp"
+                        android:textSize="14dp"
+                        android:singleLine="true"
+                        android:hint="Email..." />
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Youtube video embed url (*optional)"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="14dp"
+                    android:textColor="#777777"/>
+
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/url_icon"
+                        />
+
+                    <EditText
+                        android:id="@+id/youtube_field"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@android:color/white"
+                        android:padding="5dp"
+                        android:inputType="textEmailAddress"
+                        android:textSize="14dp"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Impressions of your trip:"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#777777"/>
+
+                <EditText
+                    android:id="@+id/impressions_field"
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/white"
+                    android:padding="5dp"
+                    android:inputType="textMultiLine"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#777777"
+                    android:layout_gravity="top"
+                    android:singleLine="false"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rate this place:"
+                    android:textSize="12dp"
+                    android:textColor="#777777"/>
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="1.0"
+                    android:rating="0.0" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="50">
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="25"
+                    android:text="@string/cancel_button_text"
+                    android:textAllCaps="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp"
+                    android:background="@drawable/mapbutton_selector"
+                    android:textColor="#666666"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+
+                    />
+                <Button
+                    android:id="@+id/addReviewButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="25"
+                    android:text="@string/submit_button_text"
+                    android:textAllCaps="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="10dp"
+                    android:background="@drawable/mapbutton_selector"
+                    android:textColor="#666666"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
